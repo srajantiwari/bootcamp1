@@ -1,19 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#BDBDBD">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Srajan tiwari"
-        android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Name"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:fontFamily="serif-monospace"
+        />
 
-</android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Email"
+        android:textSize="24sp"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/et_name"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:fontFamily="serif-monospace"
+        android:textColorHint="@color/colorPrimaryDark"
+        />
+
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Password"
+        android:textSize="24sp"
+        android:layout_below="@id/et_email"
+        android:inputType="textPassword"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorPrimaryDark"
+        />
+
+
+    <EditText
+        android:id="@+id/et_con_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Comfirm password"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/et_pass"
+        android:inputType="textPassword"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="12dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_con_pass"
+        android:layout_margin="32dp"
+        android:text="Register"
+        android:textSize="28sp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn1"
+
+        />
+</RelativeLayout>
+
